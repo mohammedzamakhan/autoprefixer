@@ -1,41 +1,50 @@
 {
-    "name": "autoprefixer",
-    "version": "5.1.0",
-    "description": "Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website",
-    "keywords": ["css", "prefix", "postprocessor", "postcss"],
-    "author": "Andrey Sitnik <andrey@sitnik.ru>",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/postcss/autoprefixer.git"
-    },
-    "dependencies": {
-        "autoprefixer-core": "~5.1.4",
-        "fs-extra":          "~0.16.3",
-        "postcss":           "~4.0.2",
-        "6to5":              "3.4.0"
-    },
-    "devDependencies": {
-        "gulp-bench-summary": "0.1.0",
-        "gulp-json-editor":   "2.2.1",
-        "jshint-stylish":     "1.0.0",
-        "gulp-replace":       "0.5.2",
-        "gulp-jshint":        "1.9.2",
-        "gulp-bench":         "1.1.0",
-        "gulp-mocha":         "2.0.0",
-        "gulp-6to5":          "3.0.0",
-        "gulp-util":          "3.0.3",
-        "request":            "2.53.0",
-        "stylus":             "0.50.0",
-        "mocha":              "2.1.0",
-        "gulp":               "3.8.10",
-        "chai":               "1.10.0",
-        "nib":                "1.1.0"
-    },
-    "bin": {
-        "autoprefixer": "autoprefixer"
-    },
-    "scripts": {
-        "test": "gulp"
-    }
+  "name": "autoprefixer",
+  "version": "5.1.0",
+  "description": "Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website",
+  "keywords": [
+    "css",
+    "prefix",
+    "postprocessor",
+    "postcss"
+  ],
+  "author": "Andrey Sitnik <andrey@sitnik.ru>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/postcss/autoprefixer.git"
+  },
+  "dependencies": {
+    "autoprefixer-core": "~5.1.4",
+    "fs-extra": "~0.16.3",
+    "postcss": "~4.0.2",
+    "6to5": "3.4.0",
+    "snyk": "^1.105.0"
+  },
+  "devDependencies": {
+    "gulp-bench-summary": "0.1.0",
+    "gulp-json-editor": "2.2.1",
+    "jshint-stylish": "1.0.0",
+    "gulp-replace": "0.5.2",
+    "gulp-jshint": "1.9.2",
+    "gulp-bench": "1.1.0",
+    "gulp-mocha": "2.0.0",
+    "gulp-6to5": "3.0.0",
+    "gulp-util": "3.0.3",
+    "request": "2.53.0",
+    "stylus": "0.50.0",
+    "mocha": "2.1.0",
+    "gulp": "3.8.10",
+    "chai": "1.10.0",
+    "nib": "1.1.0"
+  },
+  "bin": {
+    "autoprefixer": "autoprefixer"
+  },
+  "scripts": {
+    "test": "gulp",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
